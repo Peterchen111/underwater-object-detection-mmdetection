@@ -1,10 +1,4 @@
 # underwater-object-detection-mmdetection
-
-
-## [和鲸社区Kesci 水下目标检测算法赛（光学图像赛项）](https://www.kesci.com/home/competition/5e535a612537a0002ca864ac)
-
-## 答辩PPT
-    coming soon or by contacting with me
  
 ## 整体思路
 1. 使用两阶段检测框架，保证精度要求；
@@ -14,64 +8,6 @@
 5. 使用Global Context ROI为每个候选框添加上下文信息，充分利用数据分布特点，提升了检测精度。
 
     
-## 消融实验
-<table>
-    <tr>
-        <th>Backbone</th>
-        <th>DCN</th>
-        <th>MS</th>
-        <th><a href="https://github.com/sankin97/Underwater_detection/blob/master/mmdet/datasets/pipelines/transforms.py">Mixup</a></th>
-        <th>RandomRotate90°</th>
-        <th><a href="https://github.com/cizhenshi/TianchiGuangdong2019_2th/blob/master/src/mmdet/models/roi_extractors/single_level.py">GC</a></th>
-        <th>mAP</th>
-    </tr>
-    <tr>
-        <th>ResNet50-FPN</th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th>baseline</th>
-    </tr>
-    <tr>
-        <th>ResNeXt101-FPN</th>
-        <th>&#10003;</th>
-        <th>&#10003;</th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th>baseline+3.35%</th>
-    </tr>
-    <tr>
-        <th>ResNeXt101-FPN</th>
-        <th>&#10003;</th>
-        <th>&#10003;</th>
-        <th>&#10003;</th>
-        <th></th>
-        <th></th>
-        <th>baseline+4.25%</th>
-    </tr>  
-    <tr>
-        <th>ResNeXt101-FPN</th>
-        <th>&#10003;</th>
-        <th>&#10003;</th>
-        <th></th>
-        <th></th>
-        <th>&#10003;</th>
-        <th>baseline+4.36%</th>
-    </tr>
-    <tr>
-        <th>ResNeXt101-FPN</th>
-        <th>&#10003;</th>
-        <th>&#10003;</th>
-        <th></th>
-        <th>&#10003;</th>
-        <th>&#10003;</th>
-        <th>baseline+4.69%</th>
-    </tr>   
-</table>
-
 
 ## 项目运行的资源环境
 + 操作系统：Ubuntu 18.04.2
@@ -135,13 +71,3 @@
        最终符合官方要求格式的提交文件 cas_x101.csv 位于 submit目录下
     
     
-## Reference
-   - [BaselineBy郑烨](https://github.com/zhengye1995/underwater-object-detection)
-   - [2019广东工业智造创新大赛【赛场一】布匹疵点智能识别rank2解决方案](https://github.com/cizhenshi/TianchiGuangdong2019_2th)
-   
-   
-## Contact
-    
-    author: hk
-    qq：3025531252
-    email: 3025531252@qq.com
